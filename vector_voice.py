@@ -139,7 +139,7 @@ while True:
     generated_text = tokenizer.decode(generated_ids, skip_special_tokens=True).strip()
 
     if not generated_text:
-        generated_text = "……言葉に困るわね。"
+        generated_text = "…………"
 
     print(f"ヴェクター: {generated_text}")
     speak(generated_text)
