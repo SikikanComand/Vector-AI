@@ -85,7 +85,7 @@ while True:
             **inputs,
             max_new_tokens=256,
             do_sample=True,
-            temperature=0.7,  # 少し落ち着いた発言に
+            temperature=0.7,  
             top_p=0.9,
             pad_token_id=tokenizer.pad_token_id
         )
@@ -96,7 +96,7 @@ while True:
 
     # 空だった場合の予備処理
     if not generated_text:
-        generated_text = "……言葉に困るわね。"
+        generated_text = "…………"
 
     # 応答表示
     print(f"ヴェクター: {generated_text}")
